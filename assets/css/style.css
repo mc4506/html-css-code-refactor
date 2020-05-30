@@ -1,63 +1,16 @@
+/* global attributes */
 * {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
 }
 
 body {
   background-color: #d9dcd6;
 }
 
-/* all links have color white with no underline */
 a {
   color: white;
   text-decoration: none;
-}
-
-header {
-  background-color: #2a607c;
-  color: #ffffff;
-  padding: 20px;
-}
-
-/* <h1> inline with <nav><ul><li> */
-header h1 {
-  display: inline-block;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 48px;
-  
-}
-
-header nav {
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
-  font-size: 20px;
-  float: right;
-  margin-top: 20px;
-}
-
-header nav ul {
-  list-style-type: none;
-}
-
-/* <h1> inline with <nav><ul><li> */
-header nav ul li {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 20px;  
-}
-
-.seo {
-  color: #d9dcd6;
-}
-
-/* Large stock marketing image. Using background-image to scale and crop image */
-.stock-image {
-  height: 800px;
-  width: 100%;
-  background-image: url("/assets/images/digital-marketing-meeting.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .float-left {
@@ -68,23 +21,63 @@ header nav ul li {
   float: right;
 }
 
-/* <main> floats left of <aside> */
+/* <header> */
+header {
+  background-color: #2a607c;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  display: inline-block;
+  font: 48px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  float: right;
+  font: 20px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.seo {
+  color: #d9dcd6;
+}
+
+/* Large stock marketing image. Using background-image to scale and crop image */
+.stock-image {
+  background-image: url(/assets/images/digital-marketing-meeting.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  width: 100%;
+}
+
+
+/* <main> */
 main {
   float: left;
+  margin: 0px 0px 20px 20px;
   width: 75%;
-  margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 /* <main><article> container resizes with image */
 main article {
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
   background-color: #0072bb;
   color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 33%;
   margin-top: 20px;
   padding: 30px;
-  height: 33%;
   overflow: auto;
 }
 
@@ -93,39 +86,37 @@ main article img {
   padding: 20px;
 }
 
-main article h2 {
+h2 {
   font-size: 36px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px 20px;
 }
 
-/* <main> inline with <aside> */
+/* <aside> */
 aside {
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
   background-color: #2589bd;
   color: white;
-  width: 20%;
-  margin-top: 20px;
-  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20px 20px 0px 0px;
+  width: 20%; 
 }
 
 aside article {
   display: block;
-  padding-top: 20px;
   height: 33%;
   padding: 20px;
 }
 
 aside article img {
-  max-height: 150px;
-  margin-left: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 150px; 
 }
 
+/* <footer> */
 footer {
   clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
