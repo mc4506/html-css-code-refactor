@@ -55,7 +55,7 @@ nav ul li {
 
 /* Large stock marketing image. Using background-image to scale and crop image */
 .stock-image {
-  background-image: url(/assets/images/digital-marketing-meeting.jpg);
+  background-image: url("/assets/images/digital-marketing-meeting.jpg");
   background-size: cover;
   background-position: center;
   height: 800px;
